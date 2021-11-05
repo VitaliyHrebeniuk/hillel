@@ -1,6 +1,6 @@
-package com.company;
+package Lessons;
 
-public class Main {
+public class Lesson_1 {
     public static void main(String[] args) {
 //        int year = 3126;
 //        int friend = 8;
