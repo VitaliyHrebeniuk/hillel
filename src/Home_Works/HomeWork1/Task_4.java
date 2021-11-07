@@ -16,10 +16,10 @@ public class Task_4 {
         int second = value.nextInt();
 
         double seconds = (hour * 3600) + (minutes * 60) + second;
-        double meters_s = meters / seconds;
-        double km_h =  metersToSeconds * 3.6;
+        double metersToSeconds = meters / seconds;
+        double kmPerHour =  metersToSeconds * 3.6;
         System.out.println("Your speed in meters/second is " + metersToSeconds);
-        System.out.println("Your speed in km/h is " + km_h);
+        System.out.println("Your speed in km/h is " + kmPerHour);
 
     }
 }
