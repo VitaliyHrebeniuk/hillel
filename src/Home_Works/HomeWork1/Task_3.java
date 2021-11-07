@@ -10,7 +10,7 @@ public class Task_3 {
         double weight1 = weight.nextDouble();
         System.out.println("Enter your height please - Example: 4,1");
         double height = weight.nextDouble();
-        double bmi = weight1 / height;
+        double bmi = weight1 / Math.pow(height, 2);
 
         System.out.println(bmi);
     }
