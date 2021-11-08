@@ -7,10 +7,11 @@ public class Task_3 {
         Scanner weight = new Scanner(System.in);
 
         System.out.println("Enter your weight please - Example: 100");
-        double weight1 = weight.nextDouble();
+        double kg = weight.nextDouble() * 0.454;
         System.out.println("Enter your height please - Example: 4,1");
-        double height = weight.nextDouble();
-        double bmi = weight1 / Math.pow(height, 2);
+        double meters = weight.nextDouble() / 39.370;
+
+        double bmi = kg / Math.pow(meters, 2);
 
         System.out.println(bmi);
     }
