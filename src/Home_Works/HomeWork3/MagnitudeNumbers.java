@@ -2,7 +2,7 @@ package Home_Works.HomeWork3;
 
 import java.util.Scanner;
 
-public class magnitudeNumbers {
+public class MagnitudeNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter first number: ");

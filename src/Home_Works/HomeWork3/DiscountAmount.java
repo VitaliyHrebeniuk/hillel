@@ -2,7 +2,7 @@ package Home_Works.HomeWork3;
 
 import java.util.Scanner;
 
-public class discountAmount {
+public class DiscountAmount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter cost: ");

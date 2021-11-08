@@ -2,7 +2,7 @@ package Home_Works.HomeWork3;
 
 import java.util.Scanner;
 
-public class linearEquation {
+public class LinearEquation {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the value for a: ");
