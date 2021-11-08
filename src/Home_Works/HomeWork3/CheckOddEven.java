@@ -10,10 +10,9 @@ public class CheckOddEven {
         int value = number%2;
         if(value==0){
             System.out.println("Even Number");
-            System.out.println("BYE");
         }else{
             System.out.println("Odd Number");
-            System.out.println("BYE");
         }
+        System.out.println("BYE");
     }
 }
