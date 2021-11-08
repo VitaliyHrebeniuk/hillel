@@ -11,7 +11,7 @@ public class Task_5 {
         System.out.println("Enter second number");
         int b = value.nextInt();
 
-        double randomNumber = a + (int)(Math.random() * b);
+        int randomNumber = a + (int)(Math.random() * ((b - a) + 1));
         System.out.println("Random number: " + randomNumber);
     }
 }
