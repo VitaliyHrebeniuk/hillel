@@ -2,7 +2,7 @@ package Home_Works.HomeWork1;
 
 import java.util.Scanner;
 
-public class Task_3 {
+public class Task3 {
     public static void main(String[] args) {
         Scanner weight = new Scanner(System.in);
 

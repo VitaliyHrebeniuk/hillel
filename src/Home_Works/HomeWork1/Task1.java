@@ -2,7 +2,7 @@ package Home_Works.HomeWork1;
 
 import java.util.Scanner;
 
-public class Task_1 {
+public class Task1 {
     public static void main(String[] args) {
         Scanner inches = new Scanner(System.in);
         System.out.println("Please, enter how inches you need to convert in metrs");

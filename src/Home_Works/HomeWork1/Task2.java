@@ -2,7 +2,7 @@ package Home_Works.HomeWork1;
 
 import java.util.Scanner;
 
-public class Task_2 {
+public class Task2 {
     public static void main(String[] args) {
         Scanner minutes = new Scanner(System.in);
         System.out.println("Hello, i'm conver minutes into a number of years and days");
