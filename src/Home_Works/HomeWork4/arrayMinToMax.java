@@ -4,7 +4,12 @@ import java.util.Arrays;
 
 public class arrayMinToMax {
     public static void main(String[] args) {
-        int[] arr = {5,3,2,1,9,6,7,8};
+        int[] arr = {5, 3, 2, 1, 9, 6, 7, 8};
+        System.out.println(Arrays.toString(arrayToMinValue(arr)));
+
+    }
+
+    private static int[] arrayToMinValue(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int min = arr[i];
             int min_i = i;
@@ -19,8 +24,7 @@ public class arrayMinToMax {
                 arr[i] = arr[min_i];
                 arr[min_i] = tmp;
             }
-        }
-        System.out.println(Arrays.toString(arr));
+        }return arr;
     }
 }
 
