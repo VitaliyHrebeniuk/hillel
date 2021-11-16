@@ -1,10 +1,14 @@
-package Lessons;
+package Home_Works.HomeWork5;
 
 import java.util.Scanner;
 
-public class Lesson5 {
+public class evenOrOds {
     public static void main(String[] args) {
-        getNumberEvenOrOds();
+        if (getNumberEvenOrOds() == true){
+            System.out.println("Your number is even");
+        }else{
+            System.out.println("Your number is Ods");
+        }
     }
 
     public static int getIntFromScanner() {
@@ -12,15 +16,11 @@ public class Lesson5 {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
-    public static String getNumberEvenOrOds(){
-        String even = ("Even");
-        String ods = ("Ods");
+    public static boolean getNumberEvenOrOds(){
         if (getIntFromScanner() % 2 == 0){
-            System.out.println(even);
-            return even;
+            return true;
         }else{
-            System.out.println(ods);
-            return ods;
+            return false;
         }
     }
 }
