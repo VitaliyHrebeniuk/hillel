@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class arraysCodes {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = {1, 2, 3, 4, 5, 6};
         System.out.println(arraysValueToCodes(arr));
     }
 
@@ -18,9 +18,7 @@ public class arraysCodes {
 
         for (int i = 0; i < nameLenght; i++) {
             char character = name.charAt(i);
-            for(int k = 0; k < ascii.length; k++){
-                ascii[k] = character;
-            }
+            ascii[i] = character;
         }
         return (Arrays.toString(ascii));
     }
