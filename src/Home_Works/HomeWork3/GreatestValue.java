@@ -4,19 +4,29 @@ import java.util.Scanner;
 
 public class GreatestValue {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your first number");
-        int firstNumber = scanner.nextInt();
+        System.out.println(getGreatestValue());
 
-        System.out.println("Please enter your second number");
-        int secondNumber = scanner.nextInt();
+
+    }
+    public static int getIntFromScanner() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your number");
+        return scanner.nextInt();
+    }
+    public static String getGreatestValue(){
+        int firstNumber = getIntFromScanner();
+        int secondNumber = getIntFromScanner();
+
+        String returnFirstNumber = ("The number " + firstNumber + " has the greatest value");
+        String returnSecondNumber = ("The number " + secondNumber + " has the greatest value");
+        String returnEqualNumber = ("The numbers is equal");
 
         if(firstNumber > secondNumber){
-            System.out.println("The number " + firstNumber + " has the greatest value");
+            return returnFirstNumber;
         }else if(firstNumber == secondNumber){
-            System.out.println("The numbers is equal");
+            return returnEqualNumber;
         }else{
-            System.out.println("The number " + secondNumber + " has the greatest value");
+            return returnSecondNumber;
         }
     }
 }

@@ -4,29 +4,37 @@ import java.util.Scanner;
 
 public class PrintNumberInWordIfElse {
     public static void main(String[] args) {
+        System.out.println(printNumberInWord());
+    }
+
+    public static int getIntFromScanner() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your number");
-        int number = scanner.nextInt();
+        return scanner.nextInt();
+    }
+
+    public static String printNumberInWord(){
+        int number = getIntFromScanner();
         if(number == 1){
-            System.out.println("ONE");
+            return ("ONE");
         }else if(number == 2){
-            System.out.println("TWO");
+            return("TWO");
         }else if(number == 3){
-            System.out.println("THREE");
+            return("THREE");
         }else if(number == 4){
-            System.out.println("FOUR");
+            return("FOUR");
         }else if(number == 5){
-            System.out.println("FIVE");
+            return("FIVE");
         }else if(number == 6){
-            System.out.println("SIX");
+            return("SIX");
         }else if(number == 7){
-            System.out.println("SEVEN");
+            return("SEVEN");
         }else if(number == 8){
-            System.out.println("EIGHT");
+            return("EIGHT");
         }else if(number == 9){
-            System.out.println("NINE");
+            return("NINE");
         }else{
-            System.out.println("OTHER");
+            return("OTHER");
         }
     }
 }

@@ -4,11 +4,18 @@ import java.util.Scanner;
 
 public class MagnitudeNumbers {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Please enter first number: ");
-        int a = input.nextInt();
-        System.out.print("Please enter second number: ");
-        int b = input.nextInt();
+        System.out.println(magnitudeNumbers());
+
+    }
+
+    public static int getIntFromScanner() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your number");
+        return scanner.nextInt();
+    }
+    public static String magnitudeNumbers(){
+        int a = getIntFromScanner();
+        int b = getIntFromScanner();
         int firstNumber;
         int secondNumber;
         //-a == +a
@@ -25,11 +32,11 @@ public class MagnitudeNumbers {
         }
         //calculation
         if(firstNumber == secondNumber){
-            System.out.print(" Number is equals");
+            return (" Number is equals");
         }else if(firstNumber>secondNumber){
-            System.out.print(a + " is greatest");
+            return (a + " is greatest");
         }else{
-            System.out.print(b + " is greatest");
+            return (b + " is greatest");
         }
     }
 }

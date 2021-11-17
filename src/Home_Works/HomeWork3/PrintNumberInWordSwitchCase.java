@@ -4,39 +4,37 @@ import java.util.Scanner;
 
 public class PrintNumberInWordSwitchCase {
     public static void main(String[] args) {
+        System.out.println(getNumberInWord());
+    }
+
+    public static int getIntFromScanner() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your number");
-        int number = scanner.nextInt();
+        return scanner.nextInt();
+    }
+    public static String getNumberInWord(){
+        int number = getIntFromScanner();
         switch(number){
             case 1:
-                System.out.println("ONE");
-                break;
+                return ("ONE");
             case 2:
-                System.out.println("TWO");
-                break;
+                return("TWO");
             case 3:
-                System.out.println("THREE");
-                break;
+                return("THREE");
             case 4:
-                System.out.println("FOUR");
-                break;
+                return("FOUR");
             case 5:
-                System.out.println("FIVE");
-                break;
+                return("FIVE");
             case 6:
-                System.out.println("SIX");
-                break;
+                return("SIX");
             case 7:
-                System.out.println("SEVEN");
-                break;
+                return("SEVEN");
             case 8:
-                System.out.println("EIGHT");
-                break;
+                return("EIGHT");
             case 9:
-                System.out.println("NINE");
-                break;
+                return("NINE");
             default:
-                System.out.println("OTHER");
+                return("OTHER");
         }
     }
 }

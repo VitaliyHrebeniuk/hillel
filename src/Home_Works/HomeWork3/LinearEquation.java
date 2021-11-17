@@ -4,21 +4,33 @@ import java.util.Scanner;
 
 public class LinearEquation {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Please enter the value for a: ");
-        double a = input.nextDouble();
-        System.out.print("Please enter the value for b: ");
-        double b = input.nextDouble();
+        System.out.println(linearEquation());
 
+    }
+
+    public static int getIntFromScanner() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your number");
+        return scanner.nextInt();
+    }
+
+    public static double linearEquation() {
+        double a = getIntFromScanner();
+        double b = getIntFromScanner();
+        double returnXZERO = 0;
         double x;
+        double e = 0;
         if (a + b > 0) {
             x = -b / a;
-            System.out.println(x);
+            e = x;
         } else if (a + b < 0) {
             x = b / a;
-            System.out.println(x);
+            e = x;
         } else if (a + b == 0 || a - b == 0) {
-            System.out.println("x = 0");
+            e = returnXZERO;
         }
+        return e;
     }
 }
+
+
