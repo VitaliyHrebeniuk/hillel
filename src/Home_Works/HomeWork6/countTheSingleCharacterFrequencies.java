@@ -31,7 +31,6 @@ public class countTheSingleCharacterFrequencies {
                 }
             }
         }
-        System.out.println("Characters and their corresponding frequencies");
         for(i = 0; i <freq.length; i++) {
             if(string[i] != ' ' && string[i] != '0')
                 result += (string[i] + "-" + freq[i] + " ");
