@@ -1,28 +1,13 @@
 package Home_Works.HomeWork7;
-
-import java.util.Scanner;
+import static Home_Works.HomeWork7.FractionNumbers.*;
 
 public class App {
     public static void main(String[] args) {
-        FractionNumbers fractionNumbers = new FractionNumbers(getIntFromScanner(),getIntFromScanner1(),getStringFromScanner());
+        FractionNumbers fractionNumbers = new FractionNumbers(first_number,second_number,method);
+        first_number = fractionNumbers.setFirst_number();
+        second_number = fractionNumbers.setSecond_number();
+        method = fractionNumbers.setMethod();
         System.out.println(fractionNumbers.toString());
-    }
-
-    public static int getIntFromScanner() {
-        System.out.println("Write first_number please:");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
-    public static int getIntFromScanner1() {
-        System.out.println("Write second_number please:");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
-
-    public static String getStringFromScanner() {
-        System.out.println("What method do you need?(plus,minus,multiply,divide):");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
     }
 
 }
