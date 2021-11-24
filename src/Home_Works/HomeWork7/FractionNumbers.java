@@ -4,24 +4,18 @@ import java.util.Scanner;
 
 
 public class FractionNumbers {
-    private int first_number;
-    private int second_number;
+    private int firstNumber;
+    private int secondNumber;
     private String method;
 
     public FractionNumbers(int firstNumber, int secondNumber, String method) {
-        this.first_number = firstNumber;
-        this.second_number = secondNumber;
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
         this.method = method;
     }
 
     public static int getIntFromScanner() {
-        System.out.println("Write first_number please:");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
-
-    public static int getIntFromScanner1() {
-        System.out.println("Write second_number please:");
+        System.out.println("Write your number please:");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
@@ -36,14 +30,14 @@ public class FractionNumbers {
     public String toString(){
         switch(method) {
             case "plus":
-                return "" + plus(first_number, second_number);
+                return "" + plus(firstNumber, secondNumber);
             case"minus":
-                return "" + minus(first_number, second_number);
+                return "" + minus(firstNumber, secondNumber);
             case"multiply":
-                return "" + multiply(first_number, second_number);
+                return "" + multiply(firstNumber, secondNumber);
             case"divide":
-                if (second_number!=0) {
-                    return "" + divide(first_number, second_number);
+                if (secondNumber!=0) {
+                    return "" + divide(firstNumber, secondNumber);
                 }else {
                     return "you cannot divide by zero";
                 }
@@ -52,8 +46,8 @@ public class FractionNumbers {
         }
     }
 
-    public int plus(int firstNumber, int second_number){return first_number + second_number;}
-    public int minus(int first_number, int second_number){return first_number - second_number;}
-    public int multiply(int first_number, int second_number){return first_number * second_number;}
-    public int divide(int first_number, int second_number){return first_number / second_number;}
+    public int plus(int firstNumber, int secondNumber){return firstNumber + secondNumber;}
+    public int minus(int firstNumber, int secondNumber){return firstNumber - secondNumber;}
+    public int multiply(int firstNumber, int secondNumber){return firstNumber * secondNumber;}
+    public int divide(int firstNumber, int secondNumber){return firstNumber / secondNumber;}
 }
