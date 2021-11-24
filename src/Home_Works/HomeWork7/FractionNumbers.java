@@ -41,7 +41,11 @@ public class FractionNumbers {
             case"multiply":
                 return "" + multiply(first_number, second_number);
             case"divide":
-                return "" + divide(first_number, second_number);
+                if (second_number!=0) {
+                    return "" + divide(first_number, second_number);
+                }else {
+                    return "you cannot divide by zero";
+                }
             default:
                 return "Wrong method!";
         }
