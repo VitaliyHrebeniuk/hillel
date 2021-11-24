@@ -6,20 +6,27 @@ import java.util.Scanner;
 public class FractionNumbers {
     private int first_number;
     private int second_number;
+    private String method;
 
-    public void getIntFromScanner() {
+    public FractionNumbers(int firstNumber, int secondNumber, String method) {
+        this.first_number = firstNumber;
+        this.second_number = secondNumber;
+        this.method = method;
+    }
+
+    public static int getIntFromScanner() {
         System.out.println("Write first_number please:");
         Scanner scanner = new Scanner(System.in);
-        first_number = scanner.nextInt();
+        return scanner.nextInt();
     }
 
-    public void getIntFromScanner1() {
+    public static int getIntFromScanner1() {
         System.out.println("Write second_number please:");
         Scanner scanner = new Scanner(System.in);
-        second_number = scanner.nextInt();
+        return scanner.nextInt();
     }
 
-    public String getStringFromScanner() {
+    public static String getStringFromScanner() {
         System.out.println("What method do you need?(plus,minus,multiply,divide):");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
@@ -27,12 +34,6 @@ public class FractionNumbers {
 
     @Override
     public String toString(){
-        //вызываем для получения первого числа
-        getIntFromScanner();
-        //вызываем для получения второго числа
-        getIntFromScanner1();
-        //спрашиваем какой метод нам нужен
-        String method = getStringFromScanner();
         switch(method) {
             case "plus":
                 return "" + plus(first_number, second_number);
