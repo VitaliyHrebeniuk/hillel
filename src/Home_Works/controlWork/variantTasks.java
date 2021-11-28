@@ -1,27 +1,25 @@
 package Home_Works.controlWork;
-
 import java.util.Scanner;
-
-import static Home_Works.controlWork.armstrongNumber.getArmstronNumber;
-import static Home_Works.controlWork.evenNumber.getEvenNumber;
-import static Home_Works.controlWork.fibonacciNumber.getfibonacciNumber;
-import static Home_Works.controlWork.replaceLetter.getReplaceLetter;
-import static Home_Works.controlWork.reverseString.stringReverse;
 
 public class variantTasks {
     public static String getVariantTasks(){
         int number = getIntFromScanner();
         switch(number) {
             case 1:
-                return getEvenNumber();
+                evenNumber getEvenNumber = new evenNumber();
+                return getEvenNumber.getEvenNumber();
             case 2:
-                return getArmstronNumber();
+                armstrongNumber getArmstronNumber = new armstrongNumber();
+                return getArmstronNumber.getArmstronNumber();
             case 3:
-                return stringReverse();
+                reverseString stringReverse = new reverseString();
+                return stringReverse.stringReverse();
             case 4:
-                return getfibonacciNumber();
+                fibonacciNumber getfibonacciNumber = new fibonacciNumber();
+                return getfibonacciNumber.getfibonacciNumber();
             case 5:
-                return getReplaceLetter();
+                replaceLetter getReplaceLetter = new replaceLetter();
+                return getReplaceLetter.getReplaceLetter();
             default:
                 return "Wrong Task!";
         }

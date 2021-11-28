@@ -1,9 +1,8 @@
 package Home_Works.controlWork;
 
-import static Home_Works.controlWork.loginAccess.loginPassword;
-
 public class App {
     public static void main(String[] args) {
-        System.out.println(loginPassword());
+        loginAccess loginPassword = new loginAccess();
+        System.out.println(loginPassword.loginPassword());
     }
 }
