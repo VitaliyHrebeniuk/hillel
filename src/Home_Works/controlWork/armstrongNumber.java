@@ -24,7 +24,7 @@ public class armstrongNumber {
         }
     }
 
-    private static String getStringFromScanner() {
+    private String getStringFromScanner() {
         System.out.println("Get your number please:");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();

@@ -18,13 +18,13 @@ public class evenNumber {
         }
     }
 
-    private static String getStringFromScanner() {
+    private String getStringFromScanner() {
         System.out.println("Get your number please:");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
-    private static String getNumberEvenOrOds() {
+    private String getNumberEvenOrOds() {
         String number = getStringFromScanner();
         number = number.replaceAll("[A-Za-z]", "");
         if(number.length()>0){

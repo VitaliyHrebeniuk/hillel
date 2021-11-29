@@ -1,7 +1,7 @@
 package Home_Works.controlWork;
 
 public class fibonacciNumber {
-    public static String getfibonacciNumber() {
+    public String getfibonacciNumber() {
         int n0 = 1;
         int n1 = 1;
         int n2;

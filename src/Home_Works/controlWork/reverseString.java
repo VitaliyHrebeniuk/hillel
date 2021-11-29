@@ -3,7 +3,7 @@ package Home_Works.controlWork;
 import java.util.Scanner;
 
 public class reverseString {
-    public static String stringReverse(){
+    public String stringReverse(){
         String str = getStringFromScanner();
         char ch[]=str.toCharArray();
         String rev="";
@@ -13,7 +13,7 @@ public class reverseString {
         return rev;
     }
 
-    private static String getStringFromScanner() {
+    private String getStringFromScanner() {
         System.out.println("Enter value please:" );
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();

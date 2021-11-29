@@ -25,9 +25,10 @@ public class variantTasks {
         }
     }
 
-    private static int getIntFromScanner() {
+    private int getIntFromScanner() {
         System.out.println("What are you need?:\n 1. Even Number \n 2. Armstrong\n 3. Reverse\n 4. Fibonacci\n 5. Replace" );
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class replaceLetter {
 
-    private static String getStringFromScanner() {
+    private String getStringFromScanner() {
         System.out.println("Get your string please:");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();

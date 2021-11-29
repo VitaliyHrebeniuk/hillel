@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 
 public class loginAccess {
-    private static String login = getStringFromScanner() ;
-    private static String password = getStringFromScanner();
+    private String login = getStringFromScanner();
+    private String password = getStringFromScanner();
 
     public String loginPassword() {
         if (login.equals("admin") && password.equals("admin")) {
@@ -16,7 +16,7 @@ public class loginAccess {
         }
     }
 
-    private static String getStringFromScanner() {
+    private String getStringFromScanner() {
         System.out.println("Enter value please:" );
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
