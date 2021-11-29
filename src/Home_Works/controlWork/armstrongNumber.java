@@ -3,7 +3,7 @@ package Home_Works.controlWork;
 import java.util.Scanner;
 
 public class armstrongNumber {
-    public static String getArmstronNumber(){
+    public String getArmstronNumber(){
         String review = getStringFromScanner();
         review = review.replaceAll("[A-Za-z]", "");
         if(review.length()>0) {

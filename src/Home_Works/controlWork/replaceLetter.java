@@ -10,7 +10,7 @@ public class replaceLetter {
         return scanner.nextLine();
     }
 
-    public static String getReplaceLetter(){
+    public String getReplaceLetter(){
         String s = getStringFromScanner();
         if(s.length()<=30){
             String result = s.replaceAll("[a]", "@");

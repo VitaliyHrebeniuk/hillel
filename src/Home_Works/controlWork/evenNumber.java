@@ -2,11 +2,8 @@ package Home_Works.controlWork;
 
 import java.util.Scanner;
 
-import static Home_Works.controlWork.armstrongNumber.getArmstronNumber;
-import static Home_Works.controlWork.reverseString.stringReverse;
-
 public class evenNumber {
-    public static String getEvenNumber() {
+    public String getEvenNumber() {
         String result = "";
         String str = getNumberEvenOrOds();
         switch(str) {

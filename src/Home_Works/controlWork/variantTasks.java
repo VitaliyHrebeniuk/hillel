@@ -2,7 +2,7 @@ package Home_Works.controlWork;
 import java.util.Scanner;
 
 public class variantTasks {
-    public static String getVariantTasks(){
+    public String getVariantTasks(){
         int number = getIntFromScanner();
         switch(number) {
             case 1:

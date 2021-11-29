@@ -2,8 +2,6 @@ package Home_Works.controlWork;
 
 import java.util.Scanner;
 
-import static Home_Works.controlWork.variantTasks.getVariantTasks;
-
 
 public class loginAccess {
     private static String login = getStringFromScanner() ;
