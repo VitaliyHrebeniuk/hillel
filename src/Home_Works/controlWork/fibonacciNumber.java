@@ -9,7 +9,7 @@ public class fibonacciNumber {
         for (int i = 3; i <= 11; i++) {
             n2 = n0 + n1;
             if (n2<50) {
-                result += n2 + " ";
+                result += n2 + " \n";
             }
             n0 = n1;
             n1 = n2;
