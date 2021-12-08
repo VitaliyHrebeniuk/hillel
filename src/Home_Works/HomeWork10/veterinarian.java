@@ -7,7 +7,6 @@ public class veterinarian {
         Horse horse = new Horse("Mustang","hay", "barn");
         Animal[] animals = {cat, dog, horse};
         treatAnimal(animals);
-
     }
     public static void treatAnimal(Animal[] animal){
         System.out.println("Animals list:");
