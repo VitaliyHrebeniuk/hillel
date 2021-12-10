@@ -1,7 +1,7 @@
 package Home_Works.HomeWork10;
 
 public class Dog extends Animal {
-    private String dogTypes; //сторожевая или дворняга
+    private String dogTypes;
 
     public Dog(String name,String food, String location) {
         super(name, food, location);
