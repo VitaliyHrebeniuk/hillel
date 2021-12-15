@@ -28,6 +28,9 @@ public class Animal {
         animal.makeNoice();
         animal.eat();
         animal.sleep();
+
+        Cat cat = new Cat("Мурка", "fish", "sofa");
+        cat.makeNoice();
     }
     public String getInfo() {
         return "name='" + name + '\'' + ", food='" + food + '\'' + ", location=" + location;
