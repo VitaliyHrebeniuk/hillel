@@ -25,7 +25,7 @@ public class Demo {
         if (!login.matches("^[a-z_]{0,20}$")) {
             throw new WrongLoginException("Incorrect login");
         }
-        if (!password.matches("^[a-z_]{0,20}$")|| confirmPassword.matches("^[a-z_]{0,20}$")|| !password.equals(confirmPassword)) {
+        if (!password.matches("^[a-z_]{0,20}$") || !confirmPassword.matches("^[a-z_]{0,20}$")|| !password.equals(confirmPassword)) {
             throw new WrongPasswordException("Incorrect password");
         }
         return true;
