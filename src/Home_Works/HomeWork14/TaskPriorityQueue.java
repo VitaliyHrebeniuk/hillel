@@ -13,6 +13,7 @@ public class TaskPriorityQueue {
         //2
         for(String i : priorityQueue){
             System.out.println(i);
+            //
         }
     }
 }

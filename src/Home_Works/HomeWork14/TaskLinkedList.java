@@ -133,5 +133,6 @@ public class TaskLinkedList<S> {
         //26
         linked_list2.set(1,"golova");
         System.out.println(linked_list2);
+        //
     }
 }

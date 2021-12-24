@@ -4,6 +4,7 @@ import java.util.*;
 
 public class TaskArrayList {
     public static void main(String[] args) {
+        //
         //1
         ArrayList<String> list = new ArrayList<String>();
         list.add("Red");
