@@ -4,10 +4,10 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class LinkedList<S> {
+public class TaskLinkedList<S> {
     public static void main(String[] args) {
         //1
-        java.util.LinkedList<String> linked_list = new java.util.LinkedList<>();
+        LinkedList<String> linked_list = new LinkedList<>();
         linked_list.add("a");
         linked_list.add("b");
         linked_list.add("c");
@@ -48,7 +48,7 @@ public class LinkedList<S> {
         System.out.println(linked_list);
 
         //9
-        java.util.LinkedList<String> linked_list2 = new java.util.LinkedList<>();
+        LinkedList<String> linked_list2 = new LinkedList<>();
         linked_list2.add("1");
         linked_list2.add("2");
         linked_list2.add("3");
@@ -88,13 +88,13 @@ public class LinkedList<S> {
         System.out.println(linked_list);
 
         //17
-        java.util.LinkedList<String> linked_list3 = new java.util.LinkedList<>();
+        LinkedList<String> linked_list3 = new LinkedList<>();
         linked_list3.addAll(linked_list);
         linked_list3.addAll(linked_list2);
         System.out.println(linked_list3);
 
         //18
-        linked_list3 = (java.util.LinkedList<String>)linked_list.clone();
+        linked_list3 = (LinkedList<String>)linked_list.clone();
         System.out.println(linked_list3);
 
         //19
@@ -121,7 +121,7 @@ public class LinkedList<S> {
         System.out.println(arrayList);
 
         //24
-        java.util.LinkedList<String> linkedList4 = new java.util.LinkedList<String>();
+        LinkedList<String> linkedList4 = new LinkedList<String>();
         for (String i : linked_list)
             linkedList4.add(linked_list2.contains(i) ? "Yes" : "No");
         System.out.println(linkedList4);

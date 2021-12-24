@@ -2,10 +2,10 @@ package Home_Works.HomeWork14;
 
 import java.util.*;
 
-public class ArrayList {
+public class TaskArrayList {
     public static void main(String[] args) {
         //1
-        java.util.ArrayList<String> list = new java.util.ArrayList<String>();
+        ArrayList<String> list = new ArrayList<String>();
         list.add("Red");
         list.add("Blue");
         System.out.println(list);

@@ -1,9 +1,11 @@
 package Home_Works.HomeWork14;
 
-public class TreeSet {
+import java.util.TreeSet;
+
+public class TaskTreeSet {
     public static void main(String[] args) {
         //1
-        java.util.TreeSet<String> treeSet = new java.util.TreeSet<String>();
+        TreeSet<String> treeSet = new TreeSet<String>();
         treeSet.add("1");
         treeSet.add("2");
         treeSet.add("3");

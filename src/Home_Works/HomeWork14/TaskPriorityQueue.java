@@ -1,8 +1,10 @@
 package Home_Works.HomeWork14;
 
-public class PriorityQueue {
+import java.util.PriorityQueue;
+
+public class TaskPriorityQueue {
     public static void main(String[] args) {
-        java.util.PriorityQueue<String> priorityQueue = new java.util.PriorityQueue<String>();
+        PriorityQueue<String> priorityQueue = new PriorityQueue<String>();
         priorityQueue.add("1");
         priorityQueue.add("2");
         priorityQueue.add("3");
